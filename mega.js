@@ -1,4 +1,2 @@
-function $(element) {
-  return document.querySelector(element)
-}
+$ = document.querySelector
 Object.prototype.on = Element.prototype.addEventListener
