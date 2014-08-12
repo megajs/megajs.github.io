@@ -4,7 +4,9 @@
 <head>
   <title>mega.js</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet'>
+  <script src='mega.js'></script>
   <link href='index.css' rel='stylesheet'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
 </head>
 <body>
   <h1>mega.js</h1>
@@ -12,5 +14,6 @@
     <a href='mega.js' download>download</a>
   </div>
   <p><em>Mega.js</em> is a javascript library that adds more shortly named aliases of <em>document.querySelector</em> and <em>Object.addEventListener</em>.</p>
+  <p class='code'><span class='comment'>// element selection</span><br>$('span.code').innerHTML = 'Hello, World!'<br><br><span class='comment'>// add an event listener</span><br>$('span.code').on('click', function() {<br>&nbsp;&nbsp;console.log('code was clicked')<br>})<br><br><span class='comment'>// the .on method is added to all objects,<br>// not just those returned by $</span><br>document.body.lastChild.on('touchstart', function() {<br>&nbsp;&nbsp;console.log('document.body.lastChild was touched')<br>})<br><br><span class='comment'>// you can only pass strings to $<br>// the following will result in an error</span><br>$(window).on('load', function() {<br>&nbsp;&nbsp;$('span.code').focus()<br>})<br><br><span class='comment'>// solution: don't use $</span><br>window.on('load', function() {<br>&nbsp;&nbsp;$('span.code').focus()<br>})</p>
 </body>
 </html>

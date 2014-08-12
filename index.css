@@ -23,6 +23,19 @@ p {
   font-size: 13pt;
 }
 
+.code {
+  background-color: rgb(29, 31, 33);
+  padding: 10px;
+  border-radius: 10px;
+  color: #c5c8c6;
+  font-family: 'Inconsolata';
+}
+
+.comment {
+  color: #7C7C7C;
+  font-family: inherit;
+}
+
 @media (max-width: 604px) {
   p {
     margin-left: 20px;
