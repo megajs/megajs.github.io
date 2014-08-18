@@ -1,6 +1,7 @@
 function $(selector) {
   return document.querySelector(selector)
 }
-EventTarget.prototype.on = function(eventType, handler) {
+window.on = function(eventType, handler) {
   this.addEventListener(eventType, handler)
 }
+Element.prototype.on = window.on
